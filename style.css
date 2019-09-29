@@ -1,0 +1,8 @@
+.dog-result {
+  flex-basis: 25%;
+  width: 25%;
+}
+.dog-result.single {
+  flex-basis: 100%;
+  width: 100%;
+}

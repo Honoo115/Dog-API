@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="description" content="Dog Breed Finder" />
+    <title>Search That Dog</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Wana see some dogs?</h1>
+
+    <section>
+      <h2>Randomizer</h2>
+      <form id="dog_lottery">
+        <label for="dog_total">Total Number of Dog Images (Maximum 50)</label>
+        <input
+          name="dog_total"
+          class="dog_total"
+          type="number"
+          placeholder="Enter a total"
+          value="1"
+        />
+        <input type="submit" value="Search for Images" />
+      </form>
+    </section>
+
+    <section>
+      <h2>Browse for a specific Breed</h2>
+      <form id="breed_searcher">
+        <input type="text" class="breed_names" placeholder="Enter Breed Here" />
+        <input type="submit" class="breed_name_submit" value="Search" />
+      </form>
+    </section>
+    <section>
+      <h2>Here is a provided list of breeds</h2>
+      <form id="breed_browser">
+        <select class="breed_list">
+          <option value="null">-Choose a Breed-</option>
+        </select>
+        <input type="submit" class="breed_select_submit" value="Select Breed" />
+      </form>
+    </section>
+    <h2>Result</h2>
+    <section class="dog-results"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
